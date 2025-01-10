@@ -1,0 +1,25 @@
+#!/usr/bin/make -f
+#export DH_VERBOSE = 1
+
+include /usr/share/dpkg/pkg-info.mk
+
+pdkms:=hpuefi-dkms
+sname:=hpuefi-mod
+#$(shell dpkg-parsechangelog --show-field=Version|rev|cut -d- -f2-|rev)
+
+%:
+	dh $@
+
+override_dh_auto_clean:
+	@echo CLEAN
+
+override_dh_auto_build:
+	@echo NO BUILD
+
+override_dh_auto_install:
+	@echo NO AUTO INSTALL
+
+override_dh_dkms:
+	dh_install Makefile *.c *.h mkdevhpuefi usr/src/$(sname)-$(DEB_VERSION)
+	chmod 0644 debian/$(pdkms)/usr/src/$(sname)-$(DEB_VERSION)/*
+	dh_dkms -V $(DEB_VERSION)

@@ -1,0 +1,7 @@
+*.o
+Module.symvers
+*.ko
+.*.cmd
+hpuefi.mod
+hpuefi.mod.c
+modules.order

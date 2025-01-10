@@ -1,0 +1,17 @@
+Source: hpuefi-mod
+Section: kernel
+Priority: optional
+Maintainer: Martin Gerhard Loschwitz <martin.loschwitz@true-west.com>
+Build-Depends: debhelper-compat (= 13), dh-sequence-dkms
+Standards-Version: 4.6.0
+Homepage: https://ftp.ext.hp.com/pub/caps-softpaq/cmit/linuxtools/HP_LinuxTools.html
+Testsuite: autopkgtest-pkg-dkms
+Rules-Requires-Root: no
+
+Package: hpuefi-dkms
+Architecture: all
+Depends: ${misc:Depends}
+Description: HP Flash and Replicated Setup Utilities for Linux
+ Free set of utilities which provide the ability to manage BIOS 
+ settings and update BIOS firmware on HP supported desktop, 
+ workstation and notebook computers.
