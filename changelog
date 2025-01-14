@@ -1,16 +1,4 @@
-hpuefi-mod (3.05-0unofficial3) jammy; urgency=medium
-
-  * New upstream release
-
- -- junglezoo42 <junglezoo42@mail.de>  Mon, 13 Jan 2025 17:12:21 +0000
-
-hpuefi-mod (3.05-0unofficial2) jammy; urgency=medium
-
-  * New upstream release
-
- -- junglezoo42 <junglezoo42@mail.de>  Fri, 10 Jan 2025 14:18:59 +0000
-
-hpuefi-mod (3.05-0unofficial1) noble; urgency=medium
+hpuefi-mod (3.05-0) noble; urgency=medium
 
   * Initial release
 
