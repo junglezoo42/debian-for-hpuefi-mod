@@ -2,7 +2,7 @@ Source: hpuefi-mod
 Section: kernel
 Priority: optional
 Maintainer: junglezoo42 <junglezoo42@mail.de>
-Build-Depends: debhelper (= 13), dkms
+Build-Depends: debhelper (>= 13), dkms
 Standards-Version: 4.6.0
 Homepage: https://ftp.ext.hp.com/pub/caps-softpaq/cmit/linuxtools/HP_LinuxTools.html
 Testsuite: autopkgtest-pkg-dkms
