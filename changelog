@@ -1,3 +1,9 @@
+hpuefi-mod (3.05-0unofficial+noble10) noble; urgency=medium
+
+  * New package release
+
+ -- junglezoo42 <junglezoo42@mail.de>  Wed, 15 Jan 2025 10:15:00 +0000
+
 hpuefi-mod (3.05-0unofficial+noble9) noble; urgency=medium
 
   * New package release
