@@ -5,3 +5,4 @@ CLEAN="make -C ${kernel_source_dir} M=${dkms_tree}/${PACKAGE_NAME}/${PACKAGE_VER
 AUTOINSTALL=yes
 BUILT_MODULE_NAME[0]="hpuefi"
 DEST_MODULE_LOCATION[0]="/updates"
+POST_INSTALL="dkms.post_install"
