@@ -1,4 +1,5 @@
 #!/bin/sh
 if [ ! -e /dev/hpuefi ]; then
+	/usr/sbin/modprobe hpuefi
 	/usr/bin/mknod -m 644 /dev/hpuefi c `grep hpuefi /proc/devices | cut -d ' ' -f 1` 0
 fi
