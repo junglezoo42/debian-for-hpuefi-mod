@@ -1,5 +1,5 @@
 #!/bin/sh
 if [ ! -e /dev/hpuefi ]; then
-	/usr/sbin/modprobe hpuefi
+	insmod /lib/modules/$(uname -r)/updates/dkms/hpuefi.ko.zst
 	/usr/bin/mknod -m 644 /dev/hpuefi c `grep hpuefi /proc/devices | cut -d ' ' -f 1` 0
 fi
