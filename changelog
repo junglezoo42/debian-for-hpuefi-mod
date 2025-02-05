@@ -1,3 +1,9 @@
+hpuefi-mod (3.05-0junglezoo42+jammy18) jammy; urgency=medium
+
+  * New package release
+
+ -- junglezoo42 <junglezoo42@mail.de>  Wed, 05 Feb 2025 08:24:34 +0000
+
 hpuefi-mod (3.05-0junglezoo42+jammy17) jammy; urgency=medium
 
   * New package release
