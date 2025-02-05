@@ -21,6 +21,6 @@ override_dh_auto_install:
 
 override_dh_dkms:
 	dh_install Makefile *.c *.h mkdevhpuefi debian/dkms.post_install usr/src/$(sname)-$(DEB_VERSION)
-	chmod 0755 usr/src/$(sname)-$(DEB_VERSION)/dkms.post_install
 	chmod 0644 debian/$(pdkms)/usr/src/$(sname)-$(DEB_VERSION)/*
+	chmod 0755 debian/$(pdkms)/usr/src/$(sname)-$(DEB_VERSION)/dkms.post_install
 	dh_dkms -V $(DEB_VERSION)
