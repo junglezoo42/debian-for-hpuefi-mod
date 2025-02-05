@@ -1,3 +1,9 @@
+hpuefi-mod (3.05-0junglezoo42+focal21) focal; urgency=medium
+
+  * New package release
+
+ -- junglezoo42 <junglezoo42@mail.de>  Wed, 05 Feb 2025 12:06:07 +0000
+
 hpuefi-mod (3.05-0junglezoo42+focal20) focal; urgency=medium
 
   * New package release
