@@ -10,8 +10,15 @@ Rules-Requires-Root: no
 
 Package: hpuefi-dkms
 Architecture: all
-Depends: ${misc:Depends}
+Depends: ${misc:Depends}, hpuefi-udev (= ${binary:Version})
 Description: HP Flash and Replicated Setup Utilities for Linux
  Free set of utilities which provide the ability to manage BIOS
  settings and update BIOS firmware on HP supported desktop,
  workstation and notebook computers.
+
+Package: hpuefi-udev
+Architecture: all
+Depends: ${misc:Depends}
+Description: Helper scripts for HP UEFI udev integration
+ This package contains the udev helpers to automatically create
+ dev device nodes for hpuefi devices.

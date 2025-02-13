@@ -1,0 +1,1 @@
+DEVPATH=="/module/hpuefi", ACTION=="add", RUN+="/usr/sbin/hpuefi-dev"
