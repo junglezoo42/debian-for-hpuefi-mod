@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+# Return major number of hpuefi device on system
+
+set -eo pipefail
+
+if grep hpuefi /proc/devices >> /dev/null 2>&1; then
+  if [ ! -e /dev/hpuefi ]; then
+    /usr/bin/mknod -m 644 /dev/hpuefi c $(grep hpuefi /proc/devices | cut -f1 -d' ') 0
+  fi
+fi
